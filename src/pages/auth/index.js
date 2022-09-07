@@ -4,28 +4,20 @@ import LinkedIn from "../../assets/linkedin.svg";
 import { Link } from "react-router-dom";
 import Card from "./style";
 import React from "react";
+import "./style.css";
 
 const Index = () => {
   return (
-    <div style={{ backgroundColor: "#152238" }}>
-      <div className="md:container flex-col relative h-screen w-screen md:left-10 flex overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
-        <div className=" md:max-w-l overflow-hidden md:overflow-x-hidden ">
+    <div className="main-body">
+      <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
+        <div className="scale-110 md:max-w-l overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
           <img
             src={Logo}
             type="catchphrase"
             alt="banner"
-            style={{
-              display: "flex",
-              height: "64px",
-              position: "relative",
-              marginBottom: "4vh",
-              left: "35%",
-            }}
+            className="flex relative h-16 mb-8 left-24 md:top-0 md:mb-5 md:left-30 md:pl-6"
           />
-          <div
-            className="scale-75 md:scale-100"
-            style={{ position: "relative" }}
-          >
+          <div className="flex relative md:flex md:relative ">
             <Card style={{ backgroundColor: "#999999" }}>
               <form className=" flex flex-col gap-1 mt-10 ml-10 mr-10 ">
                 <div>
@@ -34,10 +26,7 @@ const Index = () => {
                   </div>
 
                   <TextInput
-                    style={{
-                      width: "50vh",
-                      padding: "0.5rem 1rem 0.5rem 1rem",
-                    }}
+                    className="w-60 flex"
                     id="email1"
                     type="email"
                     placeholder=""
@@ -52,10 +41,7 @@ const Index = () => {
                   <TextInput
                     id="password1"
                     type="password"
-                    style={{
-                      width: "50vh",
-                      padding: "0.5rem 1rem 0.5rem 1rem",
-                    }}
+                    className="w-60 flex"
                     required={true}
                   />
                 </div>
@@ -70,31 +56,25 @@ const Index = () => {
                     remember me
                   </Label>
                 </div>
-                <div className="pl-2 md:flex md:left-24 md:pl-1 md:w-36 md:text-sm md:relative hover:underline decoration-dotted decoration-2 underline-offset-4">
+                <div className="pl-2 md:flex md:left-16 md:pl-5 md:w-40 md:text-sm md:relative hover:underline decoration-dotted decoration-2 underline-offset-4">
                   <Link to="/" className="md:flex md:text-sm">
                     forgot your password?
                   </Link>
                 </div>
-                <div className="mt-2 md:flex md:relative md:mt-2 md:left-28 md:pl-1">
+                <div className="mt-2 md:flex md:relative md:mt-2 md:left-24 md:pl-1">
                   <button
                     type="submit"
+                    className="text-white bg-slate-800 border-slate-800 border-solid pt-1 pb-1 pl-8 pr-8"
                     style={{
-                      color: "white",
-                      paddingTop: "0.1rem",
-                      paddingBottom: "0.1rem",
-                      border: "1px solid #152238",
-                      backgroundColor: "#152238",
                       borderRadius: "99px",
-                      paddingLeft: "2.2rem",
-                      paddingRight: "2.2rem",
                     }}
                   >
                     Login
                   </button>
                 </div>
               </form>
-              <p className="mb-1 md:pt-1 md:pl-1"> or </p>
-              <div className="md:flex md:relative md:gap-1 md:mt-1 md:mb-3 md:left-20 md:pl-2">
+              <p className="mb-1 md:pt-1"> or </p>
+              <div className="md:flex md:relative md:gap-1 md:mt-1 md:mb-3 md:left-16 md:pl-1">
                 <button
                   type="submit"
                   style={{
@@ -115,11 +95,11 @@ const Index = () => {
                 </button>
               </div>
               <div className="flex relative flex-col mt-4 md:flex md:flex-col gap-1 md:mt-2 mb-3">
-                <p className="pr-40 text-xs md:flex md:text-sm md:mt-1 md:pl-12">
+                <p className="pr-40 pl-10 md:left-0 md:pr-40 text-xs md:flex md:text-sm md:mt-1 md:pl-10">
                   Don't have account?
                   <a
                     href="/"
-                    className="relative left-32 md:text-sm hover:underline decoration-dotted decoration-1 underline-offset-2"
+                    className="relative left-28 md:text-sm hover:underline decoration-dotted decoration-1 underline-offset-2"
                   >
                     Register
                   </a>
@@ -129,7 +109,7 @@ const Index = () => {
           </div>
         </div>
         <footer>
-          <p className="flex relative top-24 text-white md:top-16 md:pt-1">
+          <p className="flex relative top-16 text-white md:top-14">
             Celerates 2022
           </p>
         </footer>
