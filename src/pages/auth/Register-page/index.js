@@ -14,7 +14,7 @@ const Index = () => {
             src={Logo}
             type="catchphrase"
             alt="banner"
-            className="flex relative h-16 mb-8 left-32 md:top-0 md:mb-5 md:left-24px md:pl-6"
+            className="flex relative h-16 mb-8 md:top-0 md:mb-5 md:left-28 md:pl-3 left-40"
           />
           <div className="flex relative md:flex md:relative ">
             <Card style={{ backgroundColor: "#999999" }}>
