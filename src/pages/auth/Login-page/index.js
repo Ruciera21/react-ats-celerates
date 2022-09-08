@@ -1,14 +1,19 @@
 import { Label, TextInput, Checkbox } from "flowbite-react";
-import Logo from "../../assets/white-celerates.svg";
-import LinkedIn from "../../assets/linkedin.svg";
+import Logo from "../../../assets/white-celerates.svg";
+import LinkedIn from "../../../assets/linkedin.svg";
 import { Link } from "react-router-dom";
-import Card from "./style";
+import Card from "./style.js";
 import React from "react";
 import "./style.css";
 
 const Index = () => {
+  var dynamicHeight = `calc(94% - 44px)`;
+
   return (
-    <div className="main-body">
+    <div
+      className="main-body"
+      style={{ height: dynamicHeight, background: "#152238", opacity: "1" }}
+    >
       <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
         <div className="scale-110 md:max-w-l overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
           <img
@@ -45,7 +50,7 @@ const Index = () => {
                     required={true}
                   />
                 </div>
-                <div className="md:flex md:relative md:items-center md:pt-1 md:gap-2 md:text-xs mb-2 ">
+                <div className="md:flex md:relative md:items-center md:pt-1 md:gap-2 md:text-xs mb-3 ">
                   <Checkbox id="remember" />
                   <Label
                     htmlFor="remember"
@@ -98,7 +103,7 @@ const Index = () => {
                 <p className="pr-40 pl-10 md:left-0 md:pr-40 text-xs md:flex md:text-sm md:mt-1 md:pl-10">
                   Don't have account?
                   <a
-                    href="/"
+                    href="/register"
                     className="relative left-28 md:text-sm hover:underline decoration-dotted decoration-1 underline-offset-2"
                   >
                     Register
