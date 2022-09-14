@@ -1,5 +1,5 @@
 import { Label, TextInput } from "flowbite-react";
-import Logo from "../../../assets/1538551831281_waifu2x_art_noise3_scale_tta_1_waifu2x_art_noise3_scale_tta_1.svg";
+import Logo from "../../../assets/logo-celerates.svg";
 import { Link } from "react-router-dom";
 import Card from "./style";
 import React from "react";
