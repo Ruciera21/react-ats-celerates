@@ -11,5 +11,9 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  variants: {
+    // all the following default to ['responsive']
+    imageRendering: ["responsive"],
+  },
+  plugins: [require("flowbite/plugin", "tailwindcss-image-rendering")],
 };

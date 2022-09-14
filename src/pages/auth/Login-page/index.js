@@ -3,18 +3,19 @@ import Logo from "../../../assets/white-celerates.svg";
 import LinkedIn from "../../../assets/linkedin.svg";
 import { Link } from "react-router-dom";
 import Card from "./style.js";
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 const Index = () => {
   var dynamicHeight = `calc(94% - 44px)`;
+  const [login, setLogin] = useState("");
 
   return (
     <div
-      className="main-body"
-      style={{ height: dynamicHeight, background: "#152238", opacity: "1" }}
+      className="main-body opacity-100 bg-slate-900"
+      style={{ height: dynamicHeight }}
     >
-      <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
+      <div className="z-auto rendering-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
         <div className="scale-110 md:max-w-l overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
           <img
             src={Logo}
@@ -36,6 +37,8 @@ const Index = () => {
                     type="email"
                     placeholder=""
                     required={true}
+                    // value={login}
+                    // onChange={(e) => setLogin(e.target.value)}
                   />
                 </div>
 
@@ -110,6 +113,7 @@ const Index = () => {
                   </a>
                 </p>
               </div>
+              {/* <p>email {login}</p> */}
             </Card>
           </div>
         </div>
