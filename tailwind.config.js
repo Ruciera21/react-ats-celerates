@@ -15,5 +15,5 @@ module.exports = {
     // all the following default to ['responsive']
     imageRendering: ["responsive"],
   },
-  plugins: [require("flowbite/plugin", "tailwindcss-image-rendering")],
+  plugins: [require("flowbite/plugin"), require("tailwindcss-image-rendering")],
 };

@@ -2,5 +2,5 @@
     height: calc(94% - 44px);
     background:#ffffff; 
     opacity: 1; 
-    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
     }

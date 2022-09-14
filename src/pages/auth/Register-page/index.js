@@ -7,7 +7,7 @@ import "./style.css";
 
 const Index = () => {
   return (
-    <div className="main-body">
+    <div className="rendering-pixelated main-body">
       <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
         <div className="scale-110 md:w-96 md:max-w-xl overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
           <img
