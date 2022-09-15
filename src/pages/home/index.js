@@ -4,7 +4,7 @@ import TableJob from "../../components/table";
 
 const Home = () => {
   return (
-    <div className="max-w-screen-2xl  w-max md:w-full">
+    <div className="max-w-screen-2xl w-full md:w-full">
       <Navbar />
       <Card />
 

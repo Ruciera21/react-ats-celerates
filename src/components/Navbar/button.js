@@ -28,13 +28,15 @@ function Dropdown() {
           bg-white
           text-base
           z-50
-          float-left
-          py-2
+          float-right
+          py-4
+          pr-24
           list-none
           text-left
           rounded-lg
           shadow-lg
           mt-1
+          mr-8
           
           m-0
           bg-clip-padding
@@ -49,6 +51,7 @@ function Dropdown() {
               text-sm
               py-2
               px-4
+              
               font-normal
               block
               w-full
