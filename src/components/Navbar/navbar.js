@@ -10,9 +10,9 @@ function Navbar() {
 
   return (
     <nav className="bg-slate-900 shadow-2xl">
-      <div className="flex items-center font-medium justify-around">
+      <div className="flex items-center font-[Poppins] font-medium justify-around">
         <div className="z-50 md:w-auto w-full flex justify-between">
-          <div className="image-wrapper flex pt-4 px-3 md:bg-white">
+          <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:bg-white">
             <img
               src={Logo}
               alt="celerates-logo"
@@ -34,7 +34,7 @@ function Navbar() {
           </div>
         </div>
         <Dropdown />
-        <ul className="md:flex hidden z-50 uppercase items-center gap-8 text-white">
+        <ul className="md:flex md:absolute hidden z-50 uppercase items-right gap-8 text-white">
           <li>
             <Link to="/" className="py-3 px-4 inline-flex">
               Careers

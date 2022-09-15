@@ -9,8 +9,13 @@ module.exports = {
     enabled: true,
   },
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        Hero: "url('assets/Hero.jpg')",
+      },
+    },
   },
+
   variants: {
     // all the following default to ['responsive']
     imageRendering: ["responsive"],
