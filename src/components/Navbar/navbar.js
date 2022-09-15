@@ -10,8 +10,8 @@ function Navbar() {
 
   return (
     <nav className="bg-slate-900 shadow-2xl">
-      <div className="flex items-center font-[Poppins] font-medium justify-around">
-        <div className="z-50 md:w-auto w-full flex justify-between">
+      <div className="flex  items-center font-[Poppins] font-medium justify-around">
+        <div className="z-50 md:w-auto w-full h-max top-0 flex justify-between">
           <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:bg-white">
             <img
               src={Logo}
@@ -23,7 +23,7 @@ function Navbar() {
             <img
               src={LogoWhite}
               alt="celerates-logo"
-              className="md:hidden absolute top-3 left-5 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
+              className="absolute md:hidden top-3 left-5 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
             />
           </div>
           <div
@@ -51,7 +51,7 @@ function Navbar() {
 
         <ul
           className={`
-          text-3xl flex-row fixed md:hidden w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+          text-3xl flex-row absolute md:hidden h-max top-0 overflow-y-auto pt-20 py-6 pl-4
         duration-500 text-white bg-slate-900 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
