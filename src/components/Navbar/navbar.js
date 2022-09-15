@@ -16,14 +16,14 @@ function Navbar() {
             <img
               src={Logo}
               alt="celerates-logo"
-              className="flex relative right-14 bottom-2 h-14 md:cursor-pointer md:right-0 image1"
+              className="hidden md:flex md:relative right-14 bottom-2 h-14 md:cursor-pointer md:right-0 image1"
             />
           </div>
-          <div className="image-wrapper flex md:hidden pt-4 px-3">
+          <div className="image-wrapper flex md:hidden py-10 px-3">
             <img
               src={LogoWhite}
               alt="celerates-logo"
-              className="md:hidden flex relative mr-56 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
+              className="md:hidden absolute top-3 left-5 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
             />
           </div>
           <div
@@ -51,13 +51,23 @@ function Navbar() {
 
         <ul
           className={`
-          text-3xl flex md:hidden fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
+          text-3xl flex-row fixed md:hidden w-full top-0 overflow-y-auto bottom-0 py-24 pl-4
         duration-500 text-white bg-slate-900 ${open ? "left-0" : "left-[-100%]"}
         `}
         >
           <li>
-            <Link to="/" className="py-7 px-3 inline-block">
+            <Link to="/" className="py-8 px-3 inline-block">
               Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="py-8 px-3 inline-block">
+              Careers
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className="py-8 px-3 inline-block">
+              Applications
             </Link>
           </li>
         </ul>
