@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar />
       <Card />
       <section className="md:container container box-border">
-        <div className="flex relative flex-row gap-32 justify-center text-center items-center font-[Poppins]">
+        <div className="flex relative flex-row gap-8 md:gap-32 justify-center text-center items-center font-[Poppins]">
           <div className="bg-gray-300 border-solid box-border flex flex-col items-center  md:box-content rounded-2xl w-1/3 h-1/2">
             <img src={AllJobs} alt="" className="w-32" />
             <h1 className="my-2 text-6xl font-semibold">420</h1>
