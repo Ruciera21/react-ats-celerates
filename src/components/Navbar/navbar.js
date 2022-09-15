@@ -10,9 +10,9 @@ function Navbar() {
 
   return (
     <nav className="bg-slate-900 shadow-2xl">
-      <div className="flex  items-center font-[Poppins] font-medium justify-around">
+      <div className="flex  items-center font-[Poppins] font-medium justify-start">
         <div className="z-50 md:w-auto w-full h-max top-0 flex justify-between">
-          <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:bg-white">
+          <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:left-24 md:bg-white">
             <img
               src={Logo}
               alt="celerates-logo"
@@ -27,14 +27,16 @@ function Navbar() {
             />
           </div>
           <div
-            className="text-3xl flex relative top-7 mr-8 md:hidden text-white "
+            className="text-3xl cursor-pointer flex relative top-7 mr-8 md:hidden text-white "
             onClick={() => setOpen(!open)}
           >
             <ion-icon name={`${open ? "close" : "menu"}`}></ion-icon>
           </div>
         </div>
-        <Dropdown />
-        <ul className="md:flex md:absolute hidden z-50 uppercase items-right gap-8 text-white">
+        <div className="flex absolute right-14 top-4">
+          <Dropdown />
+        </div>
+        <ul className="md:flex md:absolute md:right-44 md:text-center  hidden z-50 uppercase items-right gap-8 text-white">
           <li>
             <Link to="/" className="py-3 px-4 inline-flex">
               Careers
