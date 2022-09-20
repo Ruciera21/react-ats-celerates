@@ -17,12 +17,14 @@ const Index = () => {
     >
       <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
         <div className="scale-110 md:max-w-l overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
-          <img
-            src={Logo}
-            type="catchphrase"
-            alt="banner"
-            className="flex relative h-16 mb-8 left-24 md:top-0 md:mb-5 md:left-30 md:pl-6"
-          />
+          <Link to="/">
+            <img
+              src={Logo}
+              type="catchphrase"
+              alt="banner"
+              className="flex relative h-16 mb-8 left-24 md:top-0 md:mb-5 md:left-30 md:pl-6"
+            />
+          </Link>
           <div className="flex relative md:flex md:relative ">
             <Card style={{ backgroundColor: "#999999" }}>
               <form className=" flex flex-col gap-1 mt-10 ml-10 mr-10 ">

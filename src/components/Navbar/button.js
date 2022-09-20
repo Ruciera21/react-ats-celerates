@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import PP from "../../assets/pp.jpg";
+import "./style.css";
 
 function Dropdown() {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ function Dropdown() {
           dropdown-menu
           min-w-max
           absolute
-          hidden
+        hidden
           bg-white
           text-base
           z-50
@@ -45,65 +46,63 @@ function Dropdown() {
             aria-labelledby="dropdownMenuButton2"
           >
             <li>
-              <a
+              <Link
+                to="/"
                 class="
               dropdown-item
               text-sm
               py-2
               px-4
-              
+              hidden
               font-normal
-              block
+              md:block
               w-full
               whitespace-nowrap
               bg-transparent
               text-gray-700
               hover:bg-gray-100
             "
-                href="/"
-              >
-                Action
-              </a>
+              ></Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/"
                 class="
               dropdown-item
               text-sm
               py-2
               px-4
               font-normal
-              block
+              md:block
+              hidden
               w-full
               whitespace-nowrap
               bg-transparent
               text-gray-700
               hover:bg-gray-100
             "
-                href="/"
-              >
-                Another action
-              </a>
+              ></Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/login"
                 class="
               dropdown-item
               text-sm
               py-2
               px-4
               font-normal
-              block
+              md:block
+              hidden
               w-full
               whitespace-nowrap
               bg-transparent
               text-gray-700
               hover:bg-gray-100
             "
-                href="/"
               >
-                Something else here
-              </a>
+                Login
+              </Link>
             </li>
           </ul>
         </div>

@@ -12,20 +12,22 @@ function Navbar() {
     <nav className="bg-slate-900 shadow-2xl">
       <div className="flex  items-center font-[Poppins] font-medium justify-start">
         <div className="z-50 md:w-auto w-full h-max top-0 flex justify-between">
-          <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:left-24 md:bg-white">
-            <img
-              src={Logo}
-              alt="celerates-logo"
-              className="hidden md:flex md:relative right-14 bottom-2 h-14 md:cursor-pointer md:right-0 image1"
-            />
-          </div>
-          <div className="image-wrapper flex md:hidden py-10 px-3">
-            <img
-              src={LogoWhite}
-              alt="celerates-logo"
-              className="absolute md:hidden top-3 left-5 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
-            />
-          </div>
+          <Link to="/">
+            <div className="image-wrapper flex relative pt-4 px-4 mr-96 right-16 md:left-24 md:bg-white">
+              <img
+                src={Logo}
+                alt="celerates-logo"
+                className="hidden md:flex md:relative right-14 bottom-2 h-14 md:cursor-pointer md:right-0 image1"
+              />
+            </div>
+            <div className="image-wrapper flex z-50 md:hidden py-10 px-3">
+              <img
+                src={LogoWhite}
+                alt="celerates-logo"
+                className="absolute md:hidden top-3 left-5 bottom-2 h-14 md:cursor-pointer md:right-0 image2 "
+              />
+            </div>
+          </Link>
           <div
             className="text-3xl cursor-pointer flex relative top-7 mr-8 md:hidden text-white "
             onClick={() => setOpen(!open)}
@@ -36,7 +38,7 @@ function Navbar() {
         <div className="flex absolute right-14 top-4">
           <Dropdown />
         </div>
-        <ul className="md:flex md:absolute md:right-44 md:text-center  hidden z-50 uppercase items-right gap-8 text-white">
+        <ul className="md:flex md:absolute md:right-36 md:text-center hidden z-50 uppercase items-right gap-8 text-white">
           <li>
             <Link to="/" className="py-3 px-4 inline-flex">
               Careers
@@ -53,7 +55,7 @@ function Navbar() {
 
         <ul
           className={`
-          text-3xl flex-row absolute md:hidden h-max top-0 overflow-y-auto pt-20 py-6 pl-4
+          text-3xl z-40 flex-row absolute md:hidden h-max top-0 overflow-y-auto pt-20 py-6 pl-4
         duration-500 text-white bg-slate-900 ${open ? "left-0" : "left-[-100%]"}
         `}
         >

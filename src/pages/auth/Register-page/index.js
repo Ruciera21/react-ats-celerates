@@ -10,12 +10,14 @@ const Index = () => {
     <div className="rendering-pixelated main-body">
       <div className="z-auto md:container container flex-col relative max-w-full max-h-full h-screen w-screen flex overflow-y-hidden overflow-x-hidden md:h-screen justify-center md:justify-center items-center md:items-center">
         <div className="scale-110 md:w-96 md:max-w-xl overflow-hidden md:overflow-y-hidden md:overflow-x-hidden ">
-          <img
-            src={Logo}
-            type="catchphrase"
-            alt="banner"
-            className="flex relative h-16 mb-8 md:top-0 md:mb-5 md:left-28 md:pl-3 left-40"
-          />
+          <Link to="/">
+            <img
+              src={Logo}
+              type="catchphrase"
+              alt="banner"
+              className="flex relative h-16 mb-8 md:top-0 md:mb-5 md:left-28 md:pl-3 left-40"
+            />
+          </Link>
           <div className="flex relative md:flex md:relative ">
             <Card style={{ backgroundColor: "#999999" }}>
               <form className="flex flex-col gap-0 mt-2 ml-10 mr-10 md:w-60 md:gap-0 md:mt-2 md:ml-10 md:mr-10 ">

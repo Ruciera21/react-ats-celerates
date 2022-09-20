@@ -10,4 +10,7 @@
     .image2{
       display: block;
     }
+    .dropdown-menu{
+      display:none
+    }
  }
